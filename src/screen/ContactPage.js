@@ -27,7 +27,7 @@ const ContactPage = ({userId, userContacts}) => {
         let deleteContacts = contacts.filter((data, i) => selected.includes(i));
         setContacts(newContacts);
         setSelectedContacts(newSelectedContacts);
-        await fetch("http://localhost:5000/deleteContacts", {
+        await fetch("https://contact-manager-serverside.onrender.com/deleteContacts", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({
@@ -88,7 +88,7 @@ const ContactPage = ({userId, userContacts}) => {
             }
             jsonData.length = jsonData.length - 1;
             jsonData = removeDuplicate(jsonData);
-            await fetch("http://localhost:5000/importContacts", {
+            await fetch("https://contact-manager-serverside.onrender.com/importContacts", {
                 method: "POST",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify({

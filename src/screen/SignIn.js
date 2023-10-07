@@ -19,7 +19,7 @@ const SignIn = ({setUser, setUserContacts}) => {
     e.preventDefault();
     if(isSignIn) {
       const result = await (
-        await fetch("http://localhost:5000/signIn", {
+        await fetch("https://contact-manager-serverside.onrender.com/signIn", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({
@@ -37,7 +37,7 @@ const SignIn = ({setUser, setUserContacts}) => {
       }
     } else {
       const result = await (
-        await fetch("http://localhost:5000/signUp", {
+        await fetch("https://contact-manager-serverside.onrender.com/signUp", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({
