@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#search{
+    background-color: #F2F2F2;
+}
+#searchBlock{
+    margin-bottom: 20px; 
+    text-align: center;
+}
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+#logoContainer {
+    background-color: #CEF3FF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 231px;
+    height: 100%
+}
+
+#logoContqainer >.logo {
+    font-family: Titillium Web;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 13px;
+    margin-left: 50px;
+    color: #0884FF;
+}
+.logoBottom {
+    height: 27px;
+    width: 90px;
+    margin-left: 36px;
+    margin-bottom: 50px;
+}
+
+#contacts {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+#contactsContainer {
+    border-top: 2px solid #EAEAEA;
+    padding: 15px;
+}
+
+#contactsContainer >.button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+.contactsButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactsButtons > .leftBtns {
+    display: flex;
+    gap: 10px;
+}
+
+.contactsButtons > .rightBtns {
+    display: flex;
+    gap: 5px;
+}
+
+#importBtn {
+    display:none;
+}
